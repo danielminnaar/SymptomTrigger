@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+    
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<title>Test</title>
+</head>
+<body>
+<p>This is my node test.</p>
+</body>
+
+</html>
+
+<script>
+    $( document ).ready(function() {
+      $.ajax({
+        type: "GET",
+        url: "/doit",
+        dataType: "json",
+        success: function(data) {
+            alert(data);
+        },
+        
+     });
+    });
+</script>
+
+
